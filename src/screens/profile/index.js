@@ -83,6 +83,8 @@ export default class Profile extends Component {
    //   indicatorStyle={styles.activeTab}
    //  style={styles.tabBar}
      //tabStyle={styles.tabBar}
+
+     style={styles.tabbar} labelStyle={styles.label}
     />;
 
     _renderScene = SceneMap({
@@ -212,10 +214,14 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         fontFamily: 'Lato-Regular'
     },
-
-    tabBar: {
-        backgroundColor: 'white',
-    },
+    tabbar: {
+        backgroundColor: '#ffffff',
+      },
+      label: {
+        color: '#404042',
+        fontWeight: '400',
+      },
+   
     labelStyle: {
         flex: 1,
         color: 'black'
